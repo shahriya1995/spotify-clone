@@ -1,5 +1,5 @@
 
-import React , {useEffect , useState} from "react"
+import React , {useEffect} from "react"
 import './App.css';
 import Login from "./components/Login/Login";
 import Player from "./components/Player/Player";
@@ -10,7 +10,7 @@ import {useDataLayerValue} from "./DataLayer";
 const spotify = new SpotifyWebApi();
 function App() {
 
-    const [{user,token},dispatch] = useDataLayerValue()
+    const [{token},dispatch] = useDataLayerValue()
 
 
     useEffect(()=>{

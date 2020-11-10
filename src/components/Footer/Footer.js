@@ -1,7 +1,7 @@
 import React ,{useEffect} from "react"
 import './Footer.css'
 
-import PlayCircleOutlineOutlinedIcon from '@material-ui/icons/PlayCircleOutlineOutlined';
+// import PlayCircleOutlineOutlinedIcon from '@material-ui/icons/PlayCircleOutlineOutlined';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
 import ShuffleIcon from '@material-ui/icons/Shuffle';
@@ -16,7 +16,7 @@ import {useDataLayerValue} from "../../DataLayer";
 
 
 function Footer({ spotify }) {
-    const [{ token, item, playing }, dispatch] = useDataLayerValue();
+    const [{playing }, dispatch] = useDataLayerValue();
 
     useEffect(() => {
         spotify.getMyCurrentPlaybackState().then((r) => {
