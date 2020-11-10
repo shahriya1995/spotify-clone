@@ -73,12 +73,12 @@ function Body({spotify}) {
                     <MoreHoriz />
                 </div>
 
-                <div className="body__table">
-                    <p># TITLE</p>
-                    <p>ALBUM</p>
-                    <p>DATE ADDED</p>
+                {/*<div className="body__table">*/}
+                {/*    <p># TITLE</p>*/}
+                {/*    <p>ALBUM</p>*/}
+                {/*    <p>DATE ADDED</p>*/}
 
-                </div>
+                {/*</div>*/}
                 <br/>
                     <hr/>
 
