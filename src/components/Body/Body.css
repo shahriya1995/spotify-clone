@@ -1,0 +1,103 @@
+.body {
+    flex:0.8;
+    /*background-color: ;*/
+    background: linear-gradient(rgb(79, 87, 115),rgba(0,0,0,1));
+    height: 100vh;
+    padding: 30px;
+    color: white;
+    overflow-y:overlay ;
+}
+.body::-webkit-scrollbar{
+    display: none;
+}
+
+
+.body__info {
+    display: flex;
+    align-items: flex-end;
+    padding:10px;
+}
+
+.body__infoText {
+    flex: 1;
+    margin: 15px;
+
+
+}
+.body__info > img {
+    height: 28vh;
+    margin: 0 9px;
+    box-shadow: 0 4px 60px rgba(0,0,0,0.5);
+
+}
+
+.body__infoText >h2{
+    font-size: 90px;
+    margin-bottom: 10px;
+
+}
+.body__infoText > p {
+    font-size: 14px;
+    color: lightgray;
+
+}
+.body__icons{
+     display: flex;
+    align-items: center;
+ }
+.body__shuffle {
+    font-size: 80px !important;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #1db954;
+
+}
+.body__shuffle:hover {
+    transition: 100ms transform ease-in;
+    transform: scale(1.08);
+}
+
+.body__icons > .MuiSvgIcon-root{
+    margin-right: 20px;
+}
+
+
+.body__songs {
+    margin: 20px -30px;
+    background: linear-gradient(rgb(34, 37, 45),rgba(0,0,0,1));
+
+
+}
+
+.body__infoText > b::after{
+    content:"• ";
+    color: lightgray;
+
+}
+.body__table {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #B3B3B3;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-left: 40px;
+
+}
+
+.body__songs > hr {
+    border:0.2px solid #2F3033;
+    width:95%;
+    margin:10px auto
+}
+
+.body__songs > p{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #B3B3B3;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-left: 40px;
+}
